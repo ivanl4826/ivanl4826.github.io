@@ -1,0 +1,68 @@
+/* ==== BROWSER RESETS  ==== */
+* { box-sizing: border-box; padding: 0; margin: 0 }
+body, html { height: 100% }
+body { max-width: 1600px; margin: 0 auto }
+
+
+/* ==== UTILITY CLASS  ==== */
+.img-fluid { width: 100%; height: auto }
+* { margin:0; padding:0; box-sizing: border-box }
+
+/*
+
+h1 { font-size: calc(36px + (72 - 36) * ((100vw - 320px)/ (1600 - 320))); }
+
+*/
+
+
+
+
+/* === HERO BLOCK 1 === */
+
+
+
+/* === HERO BLOCK 2 === */
+
+
+
+
+
+/* === HERO BLOCK 3 === */
+
+
+
+
+/* === HERO BLOCK 4 === */
+
+
+
+
+/* === HERO BLOCK 5 === */
+
+
+
+/* === HERO BLOCK 6 === */
+
+
+
+
+/* === HERO BLOCK 7 === */
+
+
+
+/* === HERO BLOCK 8 === */
+
+
+
+/* === HERO BLOCK 9 === */
+
+
+
+/* === HERO BLOCK 10 === */
+
+
+/* === HERO BLOCK 11 === */
+
+
+
+
