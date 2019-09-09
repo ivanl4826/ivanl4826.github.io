@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Flexbox Columns | IBAT Web Design Portoflio Project | Mary Smith</title>
+
+	<meta name="description" content="Showcase of multi-column grids with CSS flexbox.">
+
+	<meta name="keywords" content="IBAT College, portfolio, website, Mary Smith">
+
+	<meta name="author" content="Ivan Lukenda">
+
+	<link rel="stylesheet" href="assets/css/flexbox-columns.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,800,800i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet"> 
+
+
+	<style>
+
+		.sample-1 { font-family: 'Montserrat', sans-serif }
+		.sample-1 .flex-grid-two h2 { font-weight: 900 }
+
+		.sample-1 button { background: purple; border-radius: 100px }
+
+		.sample-2 { font-family: 'Playfair Display', serif; background-color: #f7dbc9 }
+		.sample-3 { font-family: 'Roboto Condensed', sans-serif }
+
+		/* Mobiles */
+		@media all and (max-width:768px) { 
+			.sample-1 .container-narrow:nth-child(1) .col-gutter:nth-child(1) { order: 2 } 
+			.sample-1 .container-narrow:nth-child(1) .col-gutter:nth-child(2) { order: 1 }
+			.sample-1 .container-narrow:nth-child(3) .col-gutter:nth-child(1) { order: 2 } 
+			.sample-1 .container-narrow:nth-child(3) .col-gutter:nth-child(2) { order: 1 }
+		}
+
+
+		.sample-3 { background-color: #233b53 }
+		.sample-3 h2, .sample-3 h3 { color: #b9c9da }
+		.sample-3 p { color: #fff }
+
+
+		/* Desktop */
+		@media all and (min-width:768px) { 
+			.sample-3 .container-wide   { padding-top: 5%; margin-bottom:0 }
+		}
+
+		/* Mobiles */
+		@media all and (max-width:767px) { 
+			.sample-3 .container-wide   { padding-top: 8%; margin-bottom:0 }
+		}
+
+		/* Mobiles */
+		@media all and (max-width:768px) { 
+			.sample-3 .flex-grid-two { 
+				text-align: left
+			}
+		}
+
+		.sample-4 { font-family: 'Open Sans', sans-serif }
+		.sample-5 { font-family: 'Lato', sans-serif }
+		.sample-6 { font-family: 'Libre Baskerville', sans-serif; background-color: #e1ffff }
+
+		.sample-7 { 
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+
+		.sample-8 { color: #fff; background: purple; font-family: 'Montserrat', sans-serif }
+		.sample-8 .container-wide { margin-bottom: 0 }
+		.sample-8 h3 { color: #fff; line-height: 1.4 }
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<div class="container-hero">
+		<h1>Showcase of multi-column grids with CSS flexbox</h1>
+	</div>
+
+	<div class="sample-1">
+
+		<div class="container-narrow">
+
+			<h2>Praesent vel justo ullamcorper</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<h3>Praesent vel justo ullamcorper</h3>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<button>Sign up</button>
+
+			<img src="assets/img/undraw_hang_out_h9ud.png" alt="sample image" class="img-fluid">
+
+		</div><!--- /container -->
+
+		<div class="container-narrow">
+
+			<img src="assets/img/undraw_content_creator_xeju.png" alt="sample image" class="img-fluid">
+
+			<h2>Praesent vel justo ullamcorper</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<h3>Praesent vel justo ullamcorper</h3>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<button>Sign up</button>
+
+		</div><!--- /container -->
+
+		<div class="container-narrow">
+
+			<h2>Praesent vel justo ullamcorper</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<h3>Praesent vel justo ullamcorper</h3>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<button>Sign up</button>
+
+			<img src="assets/img/undraw_accept_request_vdsd.png" alt="sample image" class="img-fluid">
+
+		</div><!--- /container -->
+
+		<div class="container-narrow">
+
+			<img src="assets/img/undraw_subscriber_vabu.png" alt="sample image" class="img-fluid">
+
+			<h2>Praesent vel justo ullamcorper</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<h3>Praesent vel justo ullamcorper</h3>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<button>Sign up</button>
+
+		</div><!--- /container -->
+
+	</div><!-- /sample-1 -->
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+
+	<div class="sample-2">
+
+		<div class="container-full">
+
+			<h2>Praesent vel justo ullamcorper</h2>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<p>&euro;<b>19.99</b></p>
+			<button>Shop now</button>
+
+			<img src="assets/img/fashion-1.jpg" alt="sample image" class="img-fluid">
+
+		</div><!--- /container -->
+
+		<div class="container-full">
+
+			<img src="assets/img/fashion-2.jpg" alt="sample image" class="img-fluid">
+
+			<h2>Lorem ipsum dolor sit consectetur</h2>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<p>&euro;<b>19.99</b></p>
+			<button>Shop now</button>
+
+		</div><!--- /container -->
+
+		<div class="container-full">
+
+			<h2>Proin scelerisque est congue lobortis</h2>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<p>&euro;<b>19.99</b></p>
+			<button>Shop now</button>
+	
+			<img src="assets/img/fashion-3.jpg" alt="sample image" class="img-fluid">
+	
+		</div><!--- /container -->
+
+		<div class="container-full">
+
+			<img src="assets/img/fashion-4.jpg" alt="sample image" class="img-fluid">
+
+			<h2>Quisque vitae diam vitae elit maximus</h2>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<p>&euro;<b>19.99</b></p>
+			<button>Shop now</button>
+
+		</div><!--- /container -->
+
+	</div><!-- /sample-2 -->
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+
+	<div class="sample-3">
+
+		<div class="container-wide">
+			<h2>Praesent vel justo ullamcorper</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<h3>Primis in faucibus.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+		</div><!--- /container -->
+
+
+		<div class="container-wide">
+			<h2>Praesent vel justo ullamcorper</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<h3>Primis in faucibus.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+		</div><!--- /container -->
+
+		<div class="container-wide">
+
+			<h2>Praesent vel justo ullamcorper</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<h3>Primis in faucibus.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+		</div><!--- /container -->
+
+		<div class="container-wide">
+
+			<h2>Praesent vel justo ullamcorper</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<h3>Primis in faucibus.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+		</div><!--- /container -->
+
+	</div><!-- /sample-3 -->
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+
+	<div class="sample-4">
+
+		<div class="container-wide">
+
+			<h2>Praesent vel justo ullamcorper</h2>
+
+			<h3>Praesent vel justo ullamcorper</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+
+
+			<h3>Praesent vel justo ullamcorper</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+
+		</div><!--- /container -->
+
+	</div> <!--sample-4 -->
+
+
+
+	<div class="sample-5">
+		<div class="container-narrow">
+
+			<h2>Praesent vel justo ullamcorper</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<button>Sign up</button>
+
+			<img src="assets/img/undraw_hang_out_h9ud.png" alt="sample image" class="img-fluid">
+
+			<h3>Praesent vel justo ullamcorper</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<button>Sign up</button>
+
+		</div><!--- /container -->
+
+	</div><!-- /sample-5 --> 
+
+
+
+	<div class="sample-6">
+
+		<div class="col-no-gutter">
+
+			<img src="assets/img/fashion-1.jpg" alt="sample image" class="img-fluid">
+
+			<img src="assets/img/fashion-2.jpg" alt="sample image" class="img-fluid">
+			<img src="assets/img/fashion-3.jpg" alt="sample image" class="img-fluid">
+
+		</div><!--- /container -->
+
+		<div class="container-full">
+			<img src="assets/img/fashion-3.jpg" alt="sample image" class="img-fluid">
+
+			<h3>Lorem ipsum dolor sit consectetur</h3>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+			<p>&euro;<b>19.99</b></p>
+			<button>Shop now</button>
+
+			<img src="assets/img/fashion-1.jpg" alt="sample image" class="img-fluid">
+
+		</div><!--- /container -->
+
+	</div> <!-- /sample6 -->
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+	<div class="sample-7">
+
+		<div class="container-wide">
+
+			<img src="assets/img/sport-1.jpg" class="img-fluid" alt="sports image">
+			<h3>Dortmund loses two strikers to injury</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<p><a href="#">Read More ></a>
+
+
+			<img src="assets/img/sport-2.jpg" class="img-fluid" alt="sports image">
+			<h3>Boardroom strife continues at Arsenal</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<p><a href="#">Read More ></a>
+
+	
+			<img src="assets/img/sport-3.jpg" class="img-fluid" alt="sports image">
+			<h3>Liverpool struggle to find consistency</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<p><a href="#">Read More ></a>
+
+			<img src="assets/img/sport-4.jpg" class="img-fluid" alt="sports image">
+			<h3>Latest: Neymar to stay another season at PSG</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel metus vel aliquam. Interdum et malesuada fames.</p>
+			<p>Praesent vel justo ullamcorper, bibendum tortor a, efficitur mauris. Curabitur eget quam arcu.</p>
+			<p><a href="#">Read More ></a>
+
+		</div><!--- /container -->
+
+	</div><!-- sample-7 -->
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+	<div class="sample-8">
+
+		<div class="container-wide">
+
+			<img src="assets/img/face-1.jpg" class="img-fluid" alt="sports image">
+			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel.</h3>
+
+			<img src="assets/img/face-2.jpg" class="img-fluid" alt="sports image">
+
+			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel.</h3>
+
+		</div><!--- /container-narrow -->
+
+
+		<div class="container-wide">
+
+			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel.</h3>
+
+			<img src="assets/img/face-3.jpg" class="img-fluid" alt="sports image">
+
+			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus vel.</h3>
+
+			<img src="assets/img/face-4.jpg" class="img-fluid" alt="sports image">
+
+		</div><!--- /container -->
+
+	</div><!-- /sample -->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+	<div class="container-footer">
+
+		<p>Raesent vel justo ullamcorper, bibendum tortor a, efficitur mauris.</p>
+
+	</div><!-- /container-footer -->
+</body>
+</html>

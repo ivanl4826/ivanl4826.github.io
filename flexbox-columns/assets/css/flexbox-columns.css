@@ -1,0 +1,467 @@
+/* ==== BROWSER RESETS  ==== */
+* { box-sizing: border-box; padding: 0; margin: 0 }
+body, html { height: 100% }
+body { max-width: 1600px }
+
+
+/* ==== UTILITY CLASS  ==== */
+.img-fluid { width: 100%; height: auto }
+* { margin:0; padding:0; box-sizing: border-box }
+
+
+/* ====== HERO AND FOOTER SECTIONS ======= */
+
+.container-hero, .container-footer { width: 100%; text-align: center }
+
+.container-hero { 
+	background: blue; 
+	margin: 0 auto 5% auto; 
+	padding: 6% 0 5% 0;
+}
+
+.container-footer { 
+	background: #616161;
+	margin: 0 auto
+}
+
+.container-hero h1, .container-footer p { color: #fff; }
+
+.container-hero h1 {
+	font-size: calc(28px + (48 - 28) * ((100vw - 320px) / (1600 - 320))); 
+	font-weight: 800;
+	line-height: 1.4;
+	margin: 0 auto 3% auto;
+	width: 60%;
+	font-family: 'Montserrat', sans-serif; 
+}
+
+.container-footer p {
+	font-family: sans-serif;
+	margin: 0 auto;
+	padding: 3% 5%;
+	line-height: 1.3;
+	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+
+
+
+
+/* === CONTAINERS FOR FLEXBOX GRIDS === */
+
+.container-full { width: 100%; margin: 0 auto }
+
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.container-wide   { width: 90%; margin: 0 auto 8% auto }
+	.container-narrow { width: 80%; margin: 0 auto 8% auto; max-width: 1070px }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.container-wide   { width: 84%; margin: 0 auto 12% auto }
+	.container-narrow { width: 70%; margin: 0 auto 12% auto }
+}
+
+
+/*  ===== CONTENT WITHIN COLUMNS OF FLEXBOX GRIDS ====*/
+
+.flex-grid-two h2, .flex-grid-two h3 {  
+	font-weight: 700; 
+	color: #183b56;
+	line-height: 1.1;
+}
+
+.flex-grid-two h2 {  
+	font-size: calc(26px + (48 - 26) * ((100vw - 320px) / (1600 - 320))); 
+	margin-bottom: 3%;
+}
+
+.flex-grid-two h3 { 
+	font-weight: 700;
+	font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.flex-grid-two p { 
+	font-weight: 400;
+	color: #465E72;
+	line-height: 1.5;
+	margin-bottom: 6%;
+	font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.flex-grid-two button { 
+	font-family: sans-serif;
+	font-weight: bold; 
+	background-color: #000; 
+	color: #fff; 
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-width: 0; 
+	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+/* Desktop */
+@media all and (min-width:768px) { button { padding: 12px 28px } }
+
+/* Mobiles */
+@media all and (max-width:767px) { button { padding: 8px 16px } }
+
+
+.flex-grid-two hr { 
+	margin-bottom: 20px; 
+	width: 20%; 
+	height: 12px; 
+	background-color: #B9995E; 
+	border-width:0
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.flex-grid-two hr {  margin-top: 5%; margin-left: auto; margin-right: auto }
+}
+
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-two .col-no-gutter .col-no-gutter-inner {  padding: 0 10% }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.flex-grid-two .col-no-gutter .col-no-gutter-inner {  padding: 5% 10% }
+}
+
+
+/* ==== TWO COLUMN FLEXBOX GRID ======= */
+
+.flex-grid-two { display: flex }
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-two { 
+		flex-direction: row; /* left to right */
+		text-align: left
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:768px) { 
+	.flex-grid-two { 
+		flex-direction: column; /* top to bottom */
+		text-align: center
+	}
+}
+
+/* ==== EQUAL COLUMNS IN TWO COLUMN GRID ======= */
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-two .col-gutter { width: 46% }
+	.flex-grid-two .col-gutter:nth-child(1) { margin-right: 8% }
+	.flex-grid-two .col-gutter:nth-child(2) { margin-right: 0 }
+
+	.flex-grid-two .col-no-gutter { width: 50% }
+
+	.flex-grid-two .col-vertical-center { align-self: center }
+}
+
+/* Mobiles */
+@media all and (max-width:768px) { 
+	.flex-grid-two .col-gutter, 
+	.flex-grid-two .col-no-gutter { width: 100% }
+
+	.flex-grid-two .col-no-gutter h2 { margin-top: 5% }
+	.flex-grid-two .col-no-gutter button { margin-bottom: 5% }
+
+}
+
+
+
+/* === CONTAINERS FOR FLEXBOX GRIDS === */
+
+.container-full { width: 100%; margin: 0 auto }
+
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.container-wide   { width: 90%; margin: 0 auto 8% auto }
+	.container-narrow { width: 80%; margin: 0 auto 8% auto; max-width: 1070px }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.container-wide   { width: 84%; margin: 0 auto 12% auto }
+	.container-narrow { width: 70%; margin: 0 auto 12% auto }
+}
+
+
+/*  ===== CONTENT WITHIN COLUMNS OF FLEXBOX GRIDS ====*/
+
+.flex-grid-three h2, .flex-grid-three h3 {  
+	font-weight: 700; 
+	color: #183b56;
+	line-height: 1.1;
+}
+
+.flex-grid-three h2 {  
+	font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1600 - 320))); 
+	margin-bottom: 3%;
+}
+
+.flex-grid-three h3 { 
+	font-weight: 700;
+	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.flex-grid-three p { 
+	font-weight: 400;
+	color: #465E72;
+	line-height: 1.5;
+	margin-bottom: 6%;
+	font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.flex-grid-three button { 
+	font-family: sans-serif;
+	font-weight: bold; 
+	background-color: #000; 
+	color: #fff; 
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-width: 0; 
+	font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.flex-grid-three .col-no-gutter hr { 
+	margin-bottom: 20px; 
+	width: 20%; 
+	height: 12px; 
+	background-color: #B9995E; 
+	border-width:0
+}
+
+/* Desktop */
+@media all and (min-width:768px) { button { padding: 9px 22px } }
+
+/* Mobiles */
+@media all and (max-width:767px) { button { padding: 7px 14px } }
+
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-three .col-no-gutter .col-no-gutter-inner {  padding: 0 8% }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.flex-grid-three .col-no-gutter .col-no-gutter-inner {  padding: 4% 9% }
+}
+
+
+/* ==== THREE COLUMN GRID ======= */
+
+.flex-grid-three { display: flex }
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-three { 
+		flex-direction: row; /* left to right */
+		text-align: left
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:768px) { 
+	.flex-grid-three { 
+		flex-direction: column; /* top to bottom */
+		text-align: center
+	}
+}
+
+/* ==== COLUMNS IN THREE COLUMN GRID ======= */
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-three .col-gutter { width: 32% }
+
+	.flex-grid-three .col-gutter:nth-child(1) { margin-right: 4% }
+	.flex-grid-three .col-gutter:nth-child(2) { margin-right: 4% }
+	.flex-grid-three .col-gutter:nth-child(3) { margin-right: 0 }
+
+	.flex-grid-three .col-no-gutter { width: 33.3% }
+
+	.flex-grid-three .col-vertical-center { align-self: center }
+}
+
+/* Mobiles */
+@media all and (max-width:768px) { 
+	.flex-grid-three .col-gutter, 
+	.flex-grid-three .col-no-gutter { width: 100% }
+
+	.flex-grid-three .col-no-gutter h2 { margin-top: 5% }
+	.flex-grid-three .col-no-gutter button { margin-bottom: 5% }
+
+}
+
+
+
+/*  ===== CONTENT WITHIN COLUMNS OF FLEXBOX GRIDS ====*/
+
+.flex-grid-four h2, 
+.flex-grid-four h3, 
+.flex-grid-four-two h2,
+.flex-grid-four-two h3 {
+	font-weight: 700; 
+	color: #183b56;
+	line-height: 1.1;
+}
+
+.flex-grid-four h2, 
+.flex-grid-four-two h2 {
+	font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1600 - 320))); 
+	margin-bottom: 3%;
+}
+
+.flex-grid-four h3, 
+.flex-grid-four-two h3 {
+	font-weight: 700;
+	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320))); 
+	margin-top:2%;
+}
+
+.flex-grid-four p { 
+	font-weight: 400;
+	color: #465E72;
+	line-height: 1.4;
+	margin-bottom: 5%;
+	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.flex-grid-four-two p { 
+	font-weight: 400;
+	color: #465E72;
+	line-height: 1.4;
+	margin-bottom: 5%;
+	font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+
+
+.flex-grid-four button, 
+.flex-grid-four-two button { 
+	font-family: sans-serif;
+	font-weight: bold; 
+	background-color: #000; 
+	color: #fff; 
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-width: 0; 
+	font-size: calc(14px + (17 - 14) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.flex-grid-four .col-no-gutter hr, 
+.flex-grid-four-two .col-no-gutter hr {
+	margin-bottom: 20px; 
+	width: 20%; 
+	height: 12px; 
+	background-color: #B9995E; 
+	border-width:0
+}
+
+/* Desktop */
+@media all and (min-width:768px) { button { padding: 9px 22px } }
+
+/* Mobiles */
+@media all and (max-width:767px) { button { padding: 7px 14px } }
+
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-four .col-no-gutter .col-no-gutter-inner,
+	.flex-grid-four-two .col-no-gutter .col-no-gutter-inner {  padding: 0 8% }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.flex-grid-four .col-no-gutter .col-no-gutter-inner,
+	.flex-grid-four-two .col-no-gutter .col-no-gutter-inner {  padding: 4% 9% }
+}
+
+
+/* ==== FOUR COLUMN GRID ======= */
+
+.flex-grid-four, .flex-grid-four-two { display: flex }
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-four, .flex-grid-four-two {
+		flex-direction: row; /* left to right */
+		text-align: left
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:768px) { 
+	.flex-grid-four, .flex-grid-four-two { 
+		flex-direction: column; /* top to bottom */
+		text-align: left
+	}
+}
+
+/* ==== EQUAL COLUMNS IN TWO COLUMN GRID ======= */
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-four .col-gutter,
+	.flex-grid-four-two .col-gutter { width: 22%; padding-bottom: 10px; border-bottom: solid 2px #000 }
+
+	.flex-grid-four .col-gutter:nth-child(1),
+	.flex-grid-four-two .col-gutter:nth-child(1) { margin-right: 4% }
+
+	.flex-grid-four .col-gutter:nth-child(2),
+	.flex-grid-four-two .col-gutter:nth-child(2) { margin-right: 4% }
+
+	.flex-grid-four .col-gutter:nth-child(3),
+	.flex-grid-four-two .col-gutter:nth-child(3) { margin-right: 4% }
+
+	.flex-grid-four .col-gutter:nth-child(4),
+	.flex-grid-four-two .col-gutter:nth-child(4) { margin-right: 0 }
+
+	.flex-grid-four .col-no-gutter,
+	.flex-grid-four-two .col-no-gutter { width: 25% }
+
+	.flex-grid-four .col-vertical-center,
+	.flex-grid-four-two .col-vertical-center { align-self: center }
+}
+
+/* Mobiles */
+@media all and (max-width:768px) { 
+
+	.flex-grid-four { 
+		flex-direction: column; /* top to bottom */
+		text-align: center
+	}
+
+	.flex-grid-four .col-gutter, 
+	.flex-grid-four .col-no-gutter { width: 100% }
+
+	.flex-grid-four .col-no-gutter h2 { margin-top: 5% }
+	.flex-grid-four .col-no-gutter button { margin-bottom: 5% }
+
+
+	.flex-grid-four-two { 
+		display: flex; 
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.flex-grid-four-two .col-gutter { width: 46%; margin-bottom: 6% }
+	.flex-grid-four-two .col-gutter:nth-child(odd) { margin-right: 7% }
+	.flex-grid-four-two .col-gutter:nth-child(even) { margin-right: 0 }
+
+	.flex-grid-four-two .col-no-gutter { width: 50% }
+}
+
+
